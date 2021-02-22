@@ -61,6 +61,8 @@
             <version>2.3.0</version>
         </dependency>
 
+
+
     </dependencies>
 
     <build>
@@ -97,6 +99,12 @@
                     <reportVersion>${allure.version}</reportVersion>
                     <allureDownloadUrl>https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${allure.version}/allure-commandline-${allure.version}.zip</allureDownloadUrl>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.4.0.905</version>
             </plugin>
 
         </plugins>
